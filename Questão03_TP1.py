@@ -3,7 +3,7 @@ def fatorial(num, show=False):
         return "Não foi possível calcular o fatorial. Número negativo."
     else:
         fat = 1
-        for c in range(numero, 0, -1):
+        for c in range(num, 0, -1):
             if show:
                 print(c, end="")
                 if c > 1:
@@ -15,4 +15,4 @@ def fatorial(num, show=False):
             
         
 num = int(input("Fatorial de: "))
-print(fatorial(numero, show=True))
+print(fatorial(num, show=True))
