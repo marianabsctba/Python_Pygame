@@ -10,7 +10,6 @@ def verificar_tupla(tupla):
         print(f"O índice do elemento na tupla é {tupla.index(letra)}")
     else:
         print("Desculpe, o elemento não está na lista.")
-    return letra
         
           
 def dividir_tupla(tupla):
