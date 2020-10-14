@@ -1,5 +1,3 @@
-#desenhado outro polígono cor tomate.
-
 import turtle
 
 def geraPontos(i):
