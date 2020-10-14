@@ -22,7 +22,7 @@ def dividir_tupla(tupla):
         
 def eliminar_elemento(tupla):
     linha()
-    letra_2= input("Digite uma letra para eliminar da tupla: ").strip().lower()
+    letra_2= input("Digite uma letra (de 'a' a 'g', para eliminar da tupla: ").strip().lower()
     l = tupla.index(letra_2)
     print(tupla[:l] + tupla[l + 1:])
         
