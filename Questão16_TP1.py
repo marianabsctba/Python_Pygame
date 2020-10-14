@@ -30,22 +30,29 @@ def desenhaPoligono(inicio, pontos, corLinha="black", corRecheio="white"):
 def teste():
    # Primeiro quadrado
    quadrado = [(50, 0), (50, 50), (0, 50), (0, 0)]
-   desenhaPoligono((200, 200), quadrado, "green")
+   desenhaPoligono((200, 200), quadrado, "yellow")
 
    # Segundo quadrado
    quadrado_maior = geraPontos(100)
    desenhaPoligono((-200, 200), quadrado_maior, "green")
+   
+    #retângulo
+   retangulo = [(300,0), (300, 100), (0, 100), (0, 0)]
+   desenhaPoligono((-300,-300), retangulo, corLinha = "hotpink")
 
    # Triangulo
    triangulo = [(200, 0), (100, 100), (0, 0)]
-   desenhaPoligono((100, -100), triangulo, "green")
+   desenhaPoligono((100, -100), triangulo, "blue")
    
-   # Triângulo maior
+   # segundo triângulo 
    triangulo_maior = geraPontos(100)
    desenhaPoligono((-300, -50), triangulo, "tomato")
+   
+  
 
 def main():
    teste()
    turtle.done()
 
 main()
+
