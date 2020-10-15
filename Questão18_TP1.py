@@ -24,13 +24,13 @@ def poligono2(turtle, r, ang):
     turtle.fd(r)
     turtle.lt(180-ang)
 
-bob = turtle.Turtle()
+bob_marley = turtle.Turtle()
 
-bob.pu()
-bob.bk(130)
-bob.pd()
+bob_marley.pu()
+bob_marley.bk(130)
+bob_marley.pd()
 
 size = int(input("Digite o tamanho das arestas do polígono: "))
 quant = int(input("Digite o número de segmentos: "))
     
-poligono(bob, quant, size)
+poligono(bob_marley, quant, size)
