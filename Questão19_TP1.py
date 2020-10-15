@@ -9,6 +9,6 @@ def draw_square(square):
         rt(90)
 
 
-square = int(input('Digite um número (corresponde ao tamanho do quadrado): '))
+square = int(input("Digite um número (corresponde ao tamanho do quadrado): "))
 
 draw_square(square)
