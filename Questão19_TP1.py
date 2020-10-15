@@ -4,8 +4,8 @@ def draw(line, ang):
     shape("turtle")
     pencolor("red")
     speed(100)
-    for line in range(0,line):
-        fd(line)
+    for line in range(1,line):
+        fd(line+line)
         right(90 + ang)
 
 line = int(input("Digite um número que corresponda ao tamanho do desenho: "))
