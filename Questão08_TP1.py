@@ -1,19 +1,16 @@
-
-def triangulos(a, b, c):
-    if a > b + c or b > a + c or c > a + b:
-        print("Não pode formar um triângulo!")
-    else:
-        print("Pode formar um triângulo!")
-        if a == b and b == c:
+def verificar(a, b, c):
+    # ver se é triângulo
+    if (a < b + c) and (b < a + c) and (c < a + b):
+        print("Pode formar um triângulo!")   
+        # qual tipo de triângulo
+        if a == b == c:
             print("Triângulo equilátero!")
-        elif a == b or b==c or a == b:
-            print(" Triângulo isósceles!")
-        else:
+        elif a != b != c != a:
             print("Triângulo escaleno!")
-            
-    
-a = float(input('Primeiro lado: '))
-b = float(input('Segundo  lado: '))
-c = float(input('Terceiro lado: '))
-
-triangulos(a, b, c)
+        else:
+            print("Triângulo isósceles!")
+    else:
+        print("Não pode formar um triângulo!")  
+        
+   
+verificar(a, b, c)
