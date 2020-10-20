@@ -1,13 +1,12 @@
 import math
 import turtle
 
-def q(numero):
-    return (numero*numero)
 
 def verificar(a, b, c):
     # ver se é triângulo
     if (a < b + c) and (b < a + c) and (c < a + b):
         print("Pode formar um triângulo!")   
+        
         # qual tipo de triângulo
         if a == b == c:
             print("Triângulo equilátero!")
@@ -17,17 +16,23 @@ def verificar(a, b, c):
             print("Triângulo isósceles!")
     else:
         print("Não pode formar um triângulo!")  
+        
+
+def q(numero):
+    return (numero*numero)
     
 
 def desenhar_triangulo(a, b, c):
     #calcula angulo
-    angulo_c = math.acos( (q(a) +q(b) -q(c)) / (2*a*b));
-    angulo_a = math.acos( (q(b) +q(c) -q(a)) / (2*b*c));
-    angulo_b = 3.1415 - angulo_a - angulo_c ;
     
-    angulo_c = 180- (180 / 3.1415 * angulo_c);
-    angulo_a = 180 -(180 / 3.1415 * angulo_a);
-    angulo_b = 180-(180 / 3.1415 * angulo_b);
+    p = 3.1415
+    angulo_c = math.acos((q(a) +q(b) -q(c)) / (2*a*b))
+    angulo_a = math.acos(q(b) +q(c) -q(a)) / (2*b*c))
+    angulo_b = p - angulo_a - angulo_c 
+    
+    angulo_c = 180 - (180 / p * angulo_c)
+    angulo_a = 180 - (180 / p * angulo_a)
+    angulo_b = 180 - (180 / p * angulo_b)
 
     #desenha triângulo
     turtle.showturtle()
@@ -43,7 +48,6 @@ def desenhar_triangulo(a, b, c):
     turtle.pencolor("blue")
     turtle.forward(c)
 
-  
   
 a = float(input("Digite o lado a: \n"))
 b = float(input("Digite o lado b: \n"))
