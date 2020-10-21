@@ -13,7 +13,7 @@ def sum():
     for a in range(1, num, 2):
         if a % 2 != 0:
             s += a
-    print("A soma dos números ímpares entre 1 e", num, "é", s)
+    print("A soma dos números ímpares entre 1 e", num+1, "é", s)
     
 hello()
 sum()
