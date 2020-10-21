@@ -21,6 +21,7 @@ def verificar(a, b, c):
 def q(numero):
     return (numero*numero)
     
+# como não era obrigatório, optei por não usar a tupla.
 
 def desenhar_triangulo(a, b, c):
     #calcula angulo
@@ -49,9 +50,9 @@ def desenhar_triangulo(a, b, c):
     turtle.forward(c)
 
   
-a = float(input("Digite o lado a: \n"))
-b = float(input("Digite o lado b: \n"))
-c = float(input("Digite o lado c: \n"))
+a = float(input("Digite o lado a: "))
+b = float(input("Digite o lado b: "))
+c = float(input("Digite o lado c: "))
 
 verificar(a, b, c)
 desenhar_triangulo(a, b, c)
