@@ -2,8 +2,6 @@
 def lin():
     print("\033[1;32m==\033[0;0m" * 30)
 
-lin()
-
 
 def idade(ano, mes, dia):
     from datetime import date
@@ -38,4 +36,5 @@ ano = int(input("Em que ano você nasceu? "))
 mes = int(input("Em que mês você nasceu? "))
 dia = int(input("Em qual dia você nasceu? "))
 
+lin()
 print(idade(ano, mes, dia))
