@@ -25,7 +25,7 @@ def idade(ano, mes, dia):
         
         else:
            lin()
-           print(f"Você possui {idade - 1} ano(s), {abs(mes)} mes(es) e {abs(atual_dia - dia)} dia(s).")
+           print(f"Você possui {idade - 1} ano(s), {abs(atual_mes)} mes(es) e {abs(atual_dia - dia)} dia(s).")
            lin()
            
            idade_dias = (idade * 365) + (mes * 30) + dia
