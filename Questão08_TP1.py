@@ -12,5 +12,8 @@ def verificar(a, b, c):
     else:
         print("Não pode formar um triângulo!")  
         
-   
+  
+a  =  float ( input ( "Digite o lado a: \ n " ))
+b  =  float ( input ( "Digite o lado b: \ n " ))
+c  =  float ( input ( "Digite o lado c: \ n " ))
 verificar(a, b, c)
