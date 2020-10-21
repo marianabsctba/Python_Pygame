@@ -1,4 +1,5 @@
-#como não era obrigatório, optei não usar a tupla.
+#como não era obrigatório o exercício, optei não usar a tupla.
+
 import math
 import turtle
 
@@ -22,7 +23,6 @@ def verificar(a, b, c):
 def q(numero):
     return (numero*numero)
     
-# como não era obrigatório, optei por não usar a tupla.
 
 def desenhar_triangulo(a, b, c):
     #calcula angulo
