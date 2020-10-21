@@ -22,7 +22,7 @@ def dividir_tupla(tupla):
         
 def eliminar_elemento(tupla):
     linha()
-    letra_2= input("Digite uma letra (de 'a' a 'g', para eliminar da tupla: ").strip().lower()
+    letra_2= input("Digite uma letra (de 'a' a 'f'), para eliminar da tupla: ").strip().lower()
     l = tupla.index(letra_2)
     print(tupla[:l] + tupla[l + 1:])
         
@@ -35,7 +35,7 @@ def inverter_elementos(tupla):
     linha()
 
 
-tupla = ("a", "b", "c", "d", "e", "f", "g")
+tupla = ("a", "b", "c", "d", "e", "f")
 
 verificar_tupla(tupla)
 dividir_tupla(tupla)
