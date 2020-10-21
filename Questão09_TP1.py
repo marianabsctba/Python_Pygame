@@ -1,3 +1,4 @@
+#como não era obrigatório, optei não usar a tupla.
 import math
 import turtle
 
