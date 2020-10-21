@@ -14,12 +14,24 @@ def idade(ano, mes, dia):
     if idade < 0:
         return f"\033[1;31mValor inválido. Reinicie o programa e tente novamente.\033[0;0m"
     else:
-       lin()
-       print(f"Você possui {idade} ano(s), {abs(mes - atual_mes)} mes(es) e {abs(atual_dia - dia)} dias.")
-       lin()
-       idade_dias = (idade * 365) + (mes * 30) + dia
-       return f"\033[1;34mSua idade em dias é {idade_dias}.\033[0;0m"
-       lin()
+        if mes <= atual_mes:
+           lin()
+           print(f"Você possui {idade} ano(s), {abs(atual_mes - mes)} mes(es) e {abs(atual_dia - dia)} dia(s).")
+           lin()
+           
+           idade_dias = (idade * 365) + (mes * 30) + dia
+           return f"\033[1;34mSua idade em dias é {idade_dias}.\033[0;0m"
+           lin()
+        
+        else:
+           lin()
+           print(f"Você possui {idade - 1} ano(s), {abs(mes)} mes(es) e {abs(atual_dia - dia)} dia(s).")
+           lin()
+           
+           idade_dias = (idade * 365) + (mes * 30) + dia
+           return f"\033[1;34mSua idade em dias é {idade_dias}.\033[0;0m"
+           lin()
+            
 
 
 ano = int(input("Em que ano você nasceu? "))
