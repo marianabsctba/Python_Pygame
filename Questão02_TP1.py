@@ -8,9 +8,9 @@ def hello():
     line()
 
 def age():
-    years = int(input("Digite os anos: "))
-    months = int(input("Digite os meses: "))
-    days = int(input("Digite os dias: "))
+    years = int(input("Digite sua idade em anos: "))
+    months = int(input("Digite o mês do seu aniversário: "))
+    days = int(input("Digite o dia em que você nasceu: "))
     print("A sua idade em dias é de", ((years*365) + (months *30) + days))
 
 
